@@ -1,0 +1,35 @@
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Orbitron,sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: var(--body-bcg);
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+.img{
+  max-width: 100%;
+}
+ul li,ul ol{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+input,textarea,select{
+  outline: none;
+}
+
+input[type="text"]{
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}

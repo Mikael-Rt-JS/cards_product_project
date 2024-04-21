@@ -1,0 +1,82 @@
+.cards{
+  height: auto;
+  width: 100%;
+  overflow-x: auto;
+}
+.cards::-webkit-scrollbar{
+  background: var(--body-bcg);
+  width: 12px;
+}
+.cards::-webkit-scrollbar-track{
+  background: var(--body-bcg);
+}
+.cards::-webkit-scrollbar-thumb{
+  background-color: blue;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  border: 1px solid snow;  /* отступ вокруг бегунка */
+  cursor: pointer;
+  background: var(--block-bcg);
+}
+.cards_block{
+  display: flex;
+  gap: 5px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 3px;
+  background: var(--block-bcg);
+  color: snow;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.card_rating{
+  align-self: center;
+}
+.stars{
+  width: 28px;
+  height: 20px;
+}
+.card h3{
+  text-align: center;
+}
+.card_price{
+  font-size: 22px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.currency{
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.card button{
+  width: 100%;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border-radius: 6px;
+  border: none;
+  background: -webkit-linear-gradient(90deg, #133ebe,#2b82d4,#133ebe);
+  color: snow;
+  cursor: pointer;
+}
+@media (max-width: 290px){
+  .card{
+    width: 100%;
+  }
+  .card img{
+    width: auto;
+    object-fit: cover;
+  }
+  .stars{
+    width: 18px;
+    height: 10px;
+  }
+}
